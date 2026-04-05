@@ -1,9 +1,3 @@
-"""
-Water Intake Reminder Use and Daily Energy Stability Questionnaire
-Survey ID : 68
-Version   : 1.2  —  Light / Dark mode added
-"""
-
 import streamlit as st
 import json
 import csv
