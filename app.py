@@ -44,13 +44,13 @@ QUESTIONS_FILE = os.path.join(os.path.dirname(__file__), "questions.json")
 def load_questions() -> list:
     """Load questions from questions.json; return embedded fallback if absent."""
     embedded: list = [
-        {"q": "How often do you use reminders to drink water?",
+        {"q": "How often do you remind yourself to drink water?",
          "opts": [["Daily", 4], ["Often", 3], ["Sometimes", 2], ["Rarely", 1], ["Never", 0]]},
         {"q": "How stable is your energy when you are well hydrated?",
          "opts": [["Very stable", 4], ["Stable", 3], ["Neutral", 2], ["Somewhat unstable", 1], ["Unstable", 0]]},
         {"q": "How many glasses of water do you typically drink per day?",
          "opts": [["8 or more", 4], ["6-7", 3], ["4-5", 2], ["2-3", 1], ["0-1", 0]]},
-        {"q": "How often do you experience afternoon energy crashes?",
+        {"q": "How often do you feel tired in the afternoon?",
          "opts": [["Never", 4], ["Rarely", 3], ["Sometimes", 2], ["Often", 1], ["Always", 0]]},
         {"q": "How frequently do you feel thirsty throughout the day?",
          "opts": [["Never (well hydrated)", 4], ["Rarely", 3], ["Sometimes", 2], ["Often", 1], ["Always", 0]]},
@@ -58,7 +58,7 @@ def load_questions() -> list:
          "opts": [["Excellent", 4], ["Good", 3], ["Fair", 2], ["Poor", 1], ["Very poor", 0]]},
         {"q": "How often do you replace water with sugary drinks (sodas, juices)?",
          "opts": [["Never", 4], ["Rarely", 3], ["Sometimes", 2], ["Often", 1], ["Always", 0]]},
-        {"q": "How often do you feel fatigued or sluggish in the morning?",
+        {"q": "How often do you feel tired or slow in the morning?",
          "opts": [["Never", 4], ["Rarely", 3], ["Sometimes", 2], ["Often", 1], ["Always", 0]]},
         {"q": "How consistent is your hydration routine throughout the week?",
          "opts": [["Very consistent", 4], ["Mostly consistent", 3], ["Somewhat consistent", 2], ["Inconsistent", 1], ["No routine", 0]]},
@@ -68,11 +68,11 @@ def load_questions() -> list:
          "opts": [["Daily", 4], ["Several times a week", 3], ["Weekly", 2], ["Rarely", 1], ["Never", 0]]},
         {"q": "How often do you drink water before physical activity?",
          "opts": [["Always", 4], ["Often", 3], ["Sometimes", 2], ["Rarely", 1], ["Never", 0]]},
-        {"q": "How often do you wake up feeling rested and energised?",
+        {"q": "How often do you wake up feeling fresh and full of energy?",
          "opts": [["Always", 4], ["Often", 3], ["Sometimes", 2], ["Rarely", 1], ["Never", 0]]},
-        {"q": "How often do you experience headaches that may be related to dehydration?",
+        {"q": "How often do you get headaches that might be from not drinking enough water?",
          "opts": [["Never", 4], ["Rarely", 3], ["Sometimes", 2], ["Often", 1], ["Daily", 0]]},
-        {"q": "How confident are you that your hydration habits support your daily performance?",
+        {"q": "How confident are you that drinking enough water helps you do your daily tasks well?",
          "opts": [["Very confident", 4], ["Confident", 3], ["Neutral", 2], ["Not very confident", 1], ["Not confident at all", 0]]},
     ]
     if os.path.isfile(QUESTIONS_FILE):
